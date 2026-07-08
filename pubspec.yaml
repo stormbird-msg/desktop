@@ -15,6 +15,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  yaraui:
+    git:
+      ref: main
+      url: https://github.com/softyes/yaraui
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,8 +1,12 @@
 {
   "cSpell.words": [
+    "buildlog",
     "pubspec",
     "softyes",
-    "stormbird"
+    "stormbird",
+    "swiftpm",
+    "Symbolication",
+    "yaraui"
   ],
   "dart.flutterSdkPath": ".fvm/versions/3.44.5"
 }

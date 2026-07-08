@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:yaraui/yaraui.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => YaraUI.init(
+  app: const MainApp(),
+  window: const .new(title: 'Stormbird'),
+);
 
 /// The main application widget.
 class MainApp extends StatelessWidget {
@@ -11,8 +13,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
+    return YaraApp(
+      debugShowCheckedModeBanner: false,
+      home: const Scaffold(
         body: Center(
           child: Text('Hello World!'),
         ),
