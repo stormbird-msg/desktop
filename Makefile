@@ -1,4 +1,8 @@
-.PHONY: runner upgrade
+.PHONY: icons runner upgrade
+
+icons:
+	echo "Generating launcher icons..."
+	@fvm dart run flutter_launcher_icons
 
 runner:
 	@echo "Running the build_runner..."
