@@ -384,7 +384,7 @@ packages:
   webview_cef:
     dependency: "direct main"
     description:
-      path: "../../SoftYesTI/webview_cef"
+      path: "../../softyesti/webview_cef"
       relative: true
     source: path
     version: "0.5.2"
@@ -415,7 +415,7 @@ packages:
   yaraui:
     dependency: "direct main"
     description:
-      path: "../../SoftYesTI/yaraui"
+      path: "../../softyesti/yaraui"
       relative: true
     source: path
     version: "0.1.0"
