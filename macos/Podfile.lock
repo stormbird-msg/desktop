@@ -1,0 +1,28 @@
+PODS:
+  - bitsdojo_window_macos (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+  - webview_cef (0.2.3):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - bitsdojo_window_macos (from `Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - webview_cef (from `Flutter/ephemeral/.symlinks/plugins/webview_cef/macos`)
+
+EXTERNAL SOURCES:
+  bitsdojo_window_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/bitsdojo_window_macos/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  webview_cef:
+    :path: Flutter/ephemeral/.symlinks/plugins/webview_cef/macos
+
+SPEC CHECKSUMS:
+  bitsdojo_window_macos: 7959fb0ca65a3ccda30095c181ecb856fae48ea9
+  FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
+  webview_cef: 889ee042a30e84cea403560c79d6b1d6dddf07c9
+
+PODFILE CHECKSUM: b4e5eedc1b3b0ff66f97218cf7ba4ac595a7f4fd
+
+COCOAPODS: 1.16.2

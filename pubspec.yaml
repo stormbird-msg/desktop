@@ -4,12 +4,13 @@ description: Every message. One place.
 publish_to: "none"
 homepage: https://softyes.com.br
 repository: https://github.com/stormbird-msg/desktop
+issue_tracker: https://github.com/stormbird-msg/desktop/issues
 
 version: 0.1.0+1
 
 environment:
   sdk: ^3.12.2
-  flutter: ^3.44.5
+  flutter: ^3.44.6
 
 dependencies:
   flutter:

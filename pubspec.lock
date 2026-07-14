@@ -384,9 +384,11 @@ packages:
   webview_cef:
     dependency: "direct main"
     description:
-      path: "../../softyesti/webview_cef"
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: "864c4ee1f92d32f927f9959ec7d44cc5aa46c252"
+      url: "https://github.com/softyesti/webview_cef"
+    source: git
     version: "0.5.2"
   win32:
     dependency: transitive
@@ -415,10 +417,12 @@ packages:
   yaraui:
     dependency: "direct main"
     description:
-      path: "../../softyesti/yaraui"
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: "424fd869d4b3430f645ab3dc971b5330168ca18f"
+      url: "https://github.com/softyesti/yaraui"
+    source: git
     version: "0.1.0"
 sdks:
   dart: ">=3.12.2 <4.0.0"
-  flutter: ">=3.44.5 <4.0.0"
+  flutter: ">=3.44.6 <4.0.0"
