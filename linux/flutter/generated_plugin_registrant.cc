@@ -8,7 +8,7 @@
 
 #include <bitsdojo_window_linux/bitsdojo_window_plugin.h>
 #include <flutter_acrylic/flutter_acrylic_plugin.h>
-#include <webview_cef/webview_cef_plugin.h>
+#include <webview_all_linux/webview_all_linux_plugin.h>
 
 void fl_register_plugins(FlPluginRegistry* registry) {
   g_autoptr(FlPluginRegistrar) bitsdojo_window_linux_registrar =
@@ -17,7 +17,7 @@ void fl_register_plugins(FlPluginRegistry* registry) {
   g_autoptr(FlPluginRegistrar) flutter_acrylic_registrar =
       fl_plugin_registry_get_registrar_for_plugin(registry, "FlutterAcrylicPlugin");
   flutter_acrylic_plugin_register_with_registrar(flutter_acrylic_registrar);
-  g_autoptr(FlPluginRegistrar) webview_cef_registrar =
-      fl_plugin_registry_get_registrar_for_plugin(registry, "WebviewCefPlugin");
-  webview_cef_plugin_register_with_registrar(webview_cef_registrar);
+  g_autoptr(FlPluginRegistrar) webview_all_linux_registrar =
+      fl_plugin_registry_get_registrar_for_plugin(registry, "WebviewAllLinuxPlugin");
+  webview_all_linux_plugin_register_with_registrar(webview_all_linux_registrar);
 }

@@ -1,5 +1,6 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+set(CMAKE_GENERATOR_TOOLSET "v143" CACHE STRING "Forçar Toolset v143" FORCE)
 project(stormbird LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change

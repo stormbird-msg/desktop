@@ -15,6 +15,7 @@
     "stormbird",
     "swiftpm",
     "Symbolication",
+    "winget",
     "yaraui"
   ],
   "dart.flutterSdkPath": ".fvm/versions/3.44.6"

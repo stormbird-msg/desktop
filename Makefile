@@ -1,5 +1,8 @@
-.PHONY: icons runner upgrade
+.PHONY: deps icons runner upgrade
 
+deps:
+	@echo "Installing dependencies..."
+	@sudo winget install Microsoft.NuGet
 icons:
 	echo "Generating launcher icons..."
 	@fvm dart run flutter_launcher_icons

@@ -6,7 +6,6 @@
 #endif
 
 #include "flutter/generated_plugin_registrant.h"
-#include <webview_cef/webview_cef_plugin.h>
 
 #include <bitsdojo_window_linux/bitsdojo_window_plugin.h>
 
@@ -56,7 +55,7 @@ static void my_application_activate(GApplication* application) {
   }
 
   auto bdw = bitsdojo_window_from(window);         
-  bdw->setCustomFrame(true);                       
+  bdw->setCustomFrame(true);      
   //gtk_window_set_default_size(window, 1280, 720);
 
   g_autoptr(FlDartProject) project = fl_dart_project_new();
@@ -64,8 +63,6 @@ static void my_application_activate(GApplication* application) {
       project, self->dart_entrypoint_arguments);
 
   FlView* view = fl_view_new(project);
-  g_signal_connect(view, "key_press_event", G_CALLBACK(processKeyEventForCEF), nullptr);
-  g_signal_connect(view, "key_release_event", G_CALLBACK(processKeyEventForCEF), nullptr);
   GdkRGBA background_color;
   // Background defaults to black, override it here if necessary, e.g. #00000000
   // for transparent.

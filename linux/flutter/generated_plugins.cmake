@@ -5,7 +5,7 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_linux
   flutter_acrylic
-  webview_cef
+  webview_all_linux
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

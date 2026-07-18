@@ -1,14 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-import 'package:stormbird/ui/widgets/webview.dart';
-import 'package:webview_cef/webview_cef.dart';
+import 'package:flutter/widgets.dart';
 import 'package:yaraui/yaraui.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  await WebviewManager().initialize(userAgent: 'Chrome/149.0.0.0');
   await YaraUI.init(
     app: const MainApp(),
     window: const .new(title: 'Stormbird'),
@@ -25,17 +21,24 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> {
+  late final WebViewController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = WebViewController();
+    unawaited(_controller.load(.parse('https://softyes.com.br')));
+  }
+
   @override
   void dispose() {
-    unawaited(WebviewManager().quit());
+    unawaited(_controller.dispose());
     super.dispose();
   }
 
   @override
-  Widget build(BuildContext context) {
-    return YaraApp(
-      debugShowCheckedModeBanner: false,
-      home: const Center(child: Webview()),
-    );
-  }
+  Widget build(BuildContext context) => YaraApp(
+    debugShowCheckedModeBanner: false,
+    home: Center(child: WebView(controller: _controller)),
+  );
 }

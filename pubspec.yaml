@@ -20,10 +20,6 @@ dependencies:
     git:
       ref: main
       url: https://github.com/softyesti/yaraui
-  webview_cef:
-    git:
-      ref: main
-      url: https://github.com/softyesti/webview_cef
 
 dev_dependencies:
   flutter_test:
